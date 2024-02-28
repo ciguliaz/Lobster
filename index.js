@@ -8,6 +8,7 @@ const token = process.env.TOKEN;
 // console.log(dotenv);
 // console.log(token);
 // console.log(process.env);
+//
 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
