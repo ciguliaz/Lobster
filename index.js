@@ -3,8 +3,12 @@ const path = require('node:path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 // const { Events } = require('discord.js');
 // const { token } = require('./config.json');
-require('dotenv').config({ path: './token.env' });
+require('dotenv').config();
 const token = process.env.TOKEN;
+// console.log(dotenv);
+// console.log(token);
+// console.log(process.env);
+
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
