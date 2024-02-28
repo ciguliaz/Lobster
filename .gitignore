@@ -1,0 +1,10 @@
+.env
+token.env
+node_modules
+config.json
+package.json
+package-lock.json
+procfile
+
+.git
+.eslintrc.json
