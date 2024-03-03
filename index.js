@@ -10,6 +10,9 @@ const token = process.env.TOKEN;
 // console.log(process.env);
 //
 
+const keepAlive = require('./keep-alive');
+keepAlive();
+
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -48,6 +51,5 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
-///testing branch
 
 client.login(token);
