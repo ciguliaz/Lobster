@@ -11,8 +11,6 @@ const token = process.env.TOKEN;
 //
 
 const keepAlive = require('./keep-alive');
-keepAlive();
-
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -52,4 +50,5 @@ for (const file of eventFiles) {
 	}
 }
 
+keepAlive();
 client.login(token);
